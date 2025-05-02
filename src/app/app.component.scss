@@ -1,0 +1,12 @@
+.app-header {
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6; /* Subtle border */
+  margin-bottom: 1rem;
+}
+
+/* Style active button */
+.nav-pills .active {
+  background-color: #0d6efd; /* Bootstrap primary blue */
+  color: white;
+}
