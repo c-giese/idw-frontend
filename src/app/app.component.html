@@ -1,78 +1,80 @@
 <header class="app-header">
-  <div class="row">
-    <nav class="nav nav-pills col ms-3">
-      <button
-        class="btn btn-outline-primary me-2"
-        routerLink="/test"
-        routerLinkActive="active"
-      >
-        Test API
-      </button>
-      <button
-        class="btn btn-outline-primary me-2"
-        routerLink="/chat"
-        routerLinkActive="active"
-      >
-        Chat API
-      </button>
-      <button
-        class="btn btn-outline-primary"
-        routerLink="/sample"
-        routerLinkActive="active"
-      >
-        Sample Chatbot
-      </button>
-    </nav>
+    <div class="row">
+        <nav class="nav nav-pills col ms-3">
+            <button
+                class="btn btn-outline-primary me-2"
+                routerLink="/test"
+                routerLinkActive="active"
+            >
+                Test API
+            </button>
+            <button
+                class="btn btn-outline-primary me-2"
+                routerLink="/chat"
+                routerLinkActive="active"
+            >
+                Chat API
+            </button>
+        </nav>
 
-    <div class="col text-end">
-      <div ngbDropdown class="d-inline-block">
-        <button
-          type="button"
-          class="btn btn-outline-primary"
-          id="dropdownBasic2"
-          ngbDropdownToggle
-        >
-          Docs
-        </button>
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
-          <button
-            ngbDropdownItem
-            (click)="openNewPage('https://v18.angular.dev/')"
-          >
-            Angular
-          </button>
-          <button
-            ngbDropdownItem
-            (click)="
-              openNewPage('https://flask.palletsprojects.com/en/stable/')
-            "
-          >
-            Flask
-          </button>
-          <button ngbDropdownItem (click)="openNewPage('https://ollama.com/')">
-            Ollama
-          </button>
-          <button
-            ngbDropdownItem
-            (click)="openNewPage('https://github.com/c-giese?tab=repositories')"
-          >
-            GitHub Repositories
-          </button>
-          <button
-            ngbDropdownItem
-            (click)="
-              openNewPage(
-                'https://www.w3schools.com/python/module_requests.asp'
-              )
-            "
-          >
-            Python request module
-          </button>
+        <div class="col text-end">
+            <div ngbDropdown class="d-inline-block">
+                <button
+                    type="button"
+                    class="btn btn-outline-primary"
+                    id="dropdownBasic2"
+                    ngbDropdownToggle
+                >
+                    Docs
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                    <button
+                        ngbDropdownItem
+                        (click)="openNewPage('https://v18.angular.dev/')"
+                    >
+                        Angular
+                    </button>
+                    <button
+                        ngbDropdownItem
+                        (click)="
+                            openNewPage(
+                                'https://flask.palletsprojects.com/en/stable/'
+                            )
+                        "
+                    >
+                        Flask
+                    </button>
+                    <button
+                        ngbDropdownItem
+                        (click)="openNewPage('https://ollama.com/')"
+                    >
+                        Ollama
+                    </button>
+                    <button
+                        ngbDropdownItem
+                        (click)="
+                            openNewPage(
+                                'https://github.com/c-giese?tab=repositories'
+                            )
+                        "
+                    >
+                        GitHub Repositories
+                    </button>
+                    <button
+                        ngbDropdownItem
+                        (click)="
+                            openNewPage(
+                                'https://www.w3schools.com/python/module_requests.asp'
+                            )
+                        "
+                    >
+                        Python request module
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </header>
 <main class="container mt-4">
-  <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
 </main>
